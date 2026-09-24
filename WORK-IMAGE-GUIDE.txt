@@ -1,0 +1,25 @@
+WonderLab Studio — Selected Work image layout
+
+Desktop layout:
+P1 = 7/12 width, 16:9
+P2 = 5/12 width, 16:9
+P3 = 5/12 width, 16:9
+P4 = 7/12 width, 16:9
+
+The four cards intentionally have different widths for a more premium editorial/agency look.
+All media frames are 16:9.
+
+The site uses object-fit: contain so the complete source image remains visible.
+For the cleanest edge-to-edge result, replace all four source images with 16:9 files.
+
+Recommended source sizes:
+P1: 1920 x 1080
+P2: 1920 x 1080
+P3: 1920 x 1080
+P4: 1920 x 1080
+
+Replace only:
+assets/p1.png
+assets/p2.png
+assets/p3.jpeg
+assets/p4.jpg

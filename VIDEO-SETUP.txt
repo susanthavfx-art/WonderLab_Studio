@@ -1,0 +1,5 @@
+P1-P4 MP4 setup
+
+Replace assets/p1.mp4, p2.mp4, p3.mp4, p4.mp4 with your real videos. Keep filenames. Clicking each portfolio image opens its matching MP4 in a 16:9 modal player with controls.
+
+Recommended: MP4 / H.264 / AAC / 1920x1080 (16:9).
