@@ -59,36 +59,71 @@
           </div>
         </div>
 
-        <div class="hero-visual reveal delay-1">
-          <!-- Replace this entire visual with your own showreel/video later if desired. -->
+         <div class="hero-visual reveal delay-1">
+
           <div class="hero-card">
+
             <div class="hero-card-top">
               <span>WONDERLAB / SHOWREEL</span>
               <span>2026</span>
             </div>
-            <div class="hero-art">
-              <div class="art-ring ring-a"></div>
-              <div class="art-ring ring-b"></div>
-              <div class="art-core">
-                <span class="core-letter">W</span>
-                <span class="core-label">CREATIVE<br>ENGINE</span>
-              </div>
-              <div class="floating-chip chip-a">AI FILM</div>
-              <div class="floating-chip chip-b">3D</div>
-              <div class="floating-chip chip-c">VFX</div>
-              <div class="floating-chip chip-d">AR</div>
+
+
+            <!-- SHOWREEL VIDEO -->
+
+            <div class="hero-video">
+
+              <video
+                id="showreelVideo"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="wonderlab-logo.png">
+
+                <source
+                  src="Main_Intro%202_1.mp4"
+                  type="video/mp4">
+
+                Your browser does not support HTML5 video.
+
+              </video>
+
+              <!-- VIDEO PLAY / PAUSE BUTTON -->
+
+              <button
+                class="video-play-button"
+                id="videoPlayButton"
+                aria-label="Pause showreel">
+
+                ❚❚
+
+              </button>
+
             </div>
-            <button class="play-button" data-video="showreel" aria-label="Play showreel">
-              <span>▶</span>
-            </button>
+
+
             <div class="hero-card-bottom">
-              <span>Ideas → Images → Motion → Impact</span>
-              <span class="pulse">● LIVE CREATIVITY</span>
+
+              <span>
+                Ideas → Images → Motion → Impact
+              </span>
+
+              <span class="pulse">
+                ● SHOWREEL
+              </span>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
+
 
     <!-- MARQUEE -->
     <section class="marquee" aria-label="Capabilities">
