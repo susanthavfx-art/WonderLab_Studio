@@ -3,25 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WonderLab Studio — AI advertising, 3D, animation, VFX, AR and cinematic video production.">
+
+  <meta name="description"
+    content="WonderLab Studio — AI advertising, 3D, animation, VFX, AR and cinematic video production.">
+
   <title>WonderLab Studio — Creative AI Advertising & Visual Production</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- HERO VIDEO — FULL FRAME / NO CROP -->
+  <style>
+    .hero-video {
+      position: relative;
+      width: 100%;
+      height: auto !important;
+      aspect-ratio: auto !important;
+      overflow: hidden;
+      background: #000;
+      line-height: 0;
+    }
+
+    .hero-video video {
+      display: block;
+      width: 100%;
+      height: auto !important;
+      max-width: 100%;
+      object-fit: contain !important;
+      object-position: center center;
+      background: #000;
+    }
+
+    .video-play-button {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 50%;
+      background: rgba(0,0,0,0.55);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      z-index: 5;
+      transition: all 0.25s ease;
+    }
+
+    .video-play-button:hover {
+      transform: scale(1.08);
+      background: rgba(0,0,0,0.8);
+    }
+
+    @media (max-width: 768px) {
+      .hero-video {
+        height: auto !important;
+        aspect-ratio: auto !important;
+      }
+
+      .hero-video video {
+        width: 100%;
+        height: auto !important;
+        object-fit: contain !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <div class="cursor-glow"></div>
 
+  <!-- HEADER -->
   <header class="site-header" id="top">
     <nav class="nav container">
+
       <a class="brand" href="#top" aria-label="WonderLab Studio home">
         <img src="wonderlab-logo.png" alt="WonderLab Studio logo">
       </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button
+        class="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       <div class="nav-links">
@@ -29,43 +105,104 @@
         <a href="#work">Work</a>
         <a href="#process">Process</a>
         <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
+
+        <a href="#contact" class="nav-cta">
+          Let's Talk <span>↗</span>
+        </a>
       </div>
+
     </nav>
   </header>
 
+
   <main>
-    <!-- HERO -->
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
     <section class="hero section">
+
       <div class="hero-orbit orbit-one"></div>
       <div class="hero-orbit orbit-two"></div>
       <div class="hero-noise"></div>
 
       <div class="container hero-grid">
+
+        <!-- HERO TEXT -->
+
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="dot"></span> AI • 3D • ANIMATION • VIDEO</p>
-          <h1>We turn <span class="gradient-text">ideas</span> into cinematic brand experiences.</h1>
-          <p class="hero-lead">
-            WonderLab Studio creates premium AI commercials, 3D visuals, animation, VFX and immersive AR experiences for brands that want to stand out.
+
+          <p class="eyebrow">
+            <span class="dot"></span>
+            AI • 3D • ANIMATION • VIDEO
           </p>
+
+          <h1>
+            We turn
+            <span class="gradient-text">ideas</span>
+            into cinematic brand experiences.
+          </h1>
+
+          <p class="hero-lead">
+            WonderLab Studio creates premium AI commercials,
+            3D visuals, animation, VFX and immersive AR
+            experiences for brands that want to stand out.
+          </p>
+
           <div class="hero-actions">
-            <a href="#work" class="btn btn-primary">Explore Our Work <span>↗</span></a>
-            <a href="#contact" class="btn btn-ghost">Start a Project</a>
+
+            <a href="#work" class="btn btn-primary">
+              Explore Our Work
+              <span>↗</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost">
+              Start a Project
+            </a>
+
           </div>
+
           <div class="hero-meta">
-            <div><strong>AI</strong><span>Creative Production</span></div>
-            <div><strong>3D</strong><span>Visual Design</span></div>
-            <div><strong>AR</strong><span>Immersive Experiences</span></div>
+
+            <div>
+              <strong>AI</strong>
+              <span>Creative Production</span>
+            </div>
+
+            <div>
+              <strong>3D</strong>
+              <span>Visual Design</span>
+            </div>
+
+            <div>
+              <strong>AR</strong>
+              <span>Immersive Experiences</span>
+            </div>
+
           </div>
+
         </div>
 
-         <div class="hero-visual reveal delay-1">
+
+        <!-- =====================================================
+             HERO SHOWREEL
+        ====================================================== -->
+
+        <div class="hero-visual reveal delay-1">
 
           <div class="hero-card">
 
             <div class="hero-card-top">
-              <span>WONDERLAB / SHOWREEL</span>
-              <span>2026</span>
+
+              <span>
+                WONDERLAB / SHOWREEL
+              </span>
+
+              <span>
+                2026
+              </span>
+
             </div>
 
 
@@ -90,7 +227,8 @@
 
               </video>
 
-              <!-- VIDEO PLAY / PAUSE BUTTON -->
+
+              <!-- PLAY / PAUSE -->
 
               <button
                 class="video-play-button"
@@ -125,268 +263,1020 @@
     </section>
 
 
-    <!-- MARQUEE -->
+    <!-- =========================================================
+         MARQUEE
+    ========================================================== -->
+
     <section class="marquee" aria-label="Capabilities">
+
       <div class="marquee-track">
-        <span>AI ADVERTISING</span><i>✦</i>
-        <span>CINEMATIC VIDEO</span><i>✦</i>
-        <span>3D VISUALS</span><i>✦</i>
-        <span>VFX</span><i>✦</i>
-        <span>ANIMATION</span><i>✦</i>
-        <span>AR EXPERIENCES</span><i>✦</i>
-        <span>AI INFLUENCERS</span><i>✦</i>
-        <span>AI ADVERTISING</span><i>✦</i>
-        <span>CINEMATIC VIDEO</span><i>✦</i>
+
+        <span>AI ADVERTISING</span>
+        <i>✦</i>
+
+        <span>CINEMATIC VIDEO</span>
+        <i>✦</i>
+
+        <span>3D VISUALS</span>
+        <i>✦</i>
+
+        <span>VFX</span>
+        <i>✦</i>
+
+        <span>ANIMATION</span>
+        <i>✦</i>
+
+        <span>AR EXPERIENCES</span>
+        <i>✦</i>
+
+        <span>AI INFLUENCERS</span>
+        <i>✦</i>
+
+        <span>AI ADVERTISING</span>
+        <i>✦</i>
+
+        <span>CINEMATIC VIDEO</span>
+        <i>✦</i>
+
       </div>
+
     </section>
 
-    <!-- SERVICES -->
+
+    <!-- =========================================================
+         SERVICES
+    ========================================================== -->
+
     <section class="section services" id="services">
+
       <div class="container">
+
         <div class="section-head reveal">
+
           <div>
-            <p class="eyebrow">WHAT WE DO</p>
-            <h2>One studio.<br><span class="gradient-text">Many ways to create.</span></h2>
+
+            <p class="eyebrow">
+              WHAT WE DO
+            </p>
+
+            <h2>
+              One studio.<br>
+              <span class="gradient-text">
+                Many ways to create.
+              </span>
+            </h2>
+
           </div>
+
           <p class="section-intro">
-            From the first concept to the final frame, we combine creative thinking with modern production technology.
+            From the first concept to the final frame,
+            we combine creative thinking with modern
+            production technology.
           </p>
+
         </div>
 
+
         <div class="service-grid">
-          <a class="service-card featured reveal service-link" href="ai-advertising.html">
-            <div class="service-number">01</div>
-            <div class="service-icon">✦</div>
-            <h3>AI Advertising</h3>
-            <p>AI-powered commercials, product films, AI influencers, social ads and complete visual campaigns.</p>
+
+          <!-- SERVICE 01 -->
+
+          <a
+            class="service-card featured reveal service-link"
+            href="ai-advertising.html">
+
+            <div class="service-number">
+              01
+            </div>
+
+            <div class="service-icon">
+              ✦
+            </div>
+
+            <h3>
+              AI Advertising
+            </h3>
+
+            <p>
+              AI-powered commercials, product films,
+              AI influencers, social ads and complete
+              visual campaigns.
+            </p>
+
             <ul>
               <li>AI Commercials</li>
               <li>AI Product Films</li>
               <li>AI Influencers</li>
               <li>Social Media Ads</li>
             </ul>
+
           </a>
 
-          <a class="service-card reveal delay-1 service-link" href="3d-animation.html">
-            <div class="service-number">02</div>
-            <div class="service-icon">◈</div>
-            <h3>3D & Animation</h3>
-            <p>Premium 2D/3D motion, product animation, logo animation and stylised visual content.</p>
+
+          <!-- SERVICE 02 -->
+
+          <a
+            class="service-card reveal delay-1 service-link"
+            href="3d-animation.html">
+
+            <div class="service-number">
+              02
+            </div>
+
+            <div class="service-icon">
+              ◈
+            </div>
+
+            <h3>
+              3D & Animation
+            </h3>
+
+            <p>
+              Premium 2D/3D motion, product animation,
+              logo animation and stylised visual content.
+            </p>
+
             <ul>
               <li>3D Product Visuals</li>
               <li>Motion Graphics</li>
               <li>Logo Animation</li>
               <li>Animated Profiles</li>
             </ul>
+
           </a>
 
-          <a class="service-card reveal delay-2 service-link" href="vfx-post.html">
-            <div class="service-number">03</div>
-            <div class="service-icon">⌁</div>
-            <h3>VFX & Post</h3>
-            <p>Visual effects and finishing built around strong cinematic composition and storytelling.</p>
+
+          <!-- SERVICE 03 -->
+
+          <a
+            class="service-card reveal delay-2 service-link"
+            href="vfx-post.html">
+
+            <div class="service-number">
+              03
+            </div>
+
+            <div class="service-icon">
+              ⌁
+            </div>
+
+            <h3>
+              VFX & Post
+            </h3>
+
+            <p>
+              Visual effects and finishing built around
+              strong cinematic composition and storytelling.
+            </p>
+
             <ul>
               <li>Digital Set Design</li>
               <li>Matte Painting</li>
               <li>2D / 3D Tracking</li>
               <li>Compositing</li>
             </ul>
+
           </a>
 
-          <a class="service-card reveal delay-3 service-link" href="ar-experiences.html">
-            <div class="service-number">04</div>
-            <div class="service-icon">◎</div>
-            <h3>AR Experiences</h3>
-            <p>Interactive AR that connects physical products and marketing materials with digital experiences.</p>
+
+          <!-- SERVICE 04 -->
+
+          <a
+            class="service-card reveal delay-3 service-link"
+            href="ar-experiences.html">
+
+            <div class="service-number">
+              04
+            </div>
+
+            <div class="service-icon">
+              ◎
+            </div>
+
+            <h3>
+              AR Experiences
+            </h3>
+
+            <p>
+              Interactive AR that connects physical
+              products and marketing materials with
+              digital experiences.
+            </p>
+
             <ul>
               <li>AR Flash Cards</li>
               <li>AR Posters</li>
               <li>AR Business Cards</li>
               <li>WebAR Experiences</li>
             </ul>
+
           </a>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- WORK -->
-    <section class="section work-section" id="work">
+
+    <!-- =========================================================
+         WORK
+    ========================================================== -->
+
+    <section
+      class="section work-section"
+      id="work">
+
       <div class="container">
+
         <div class="section-head reveal">
+
           <div>
-            <p class="eyebrow">SELECTED WORK</p>
-            <h2>Made to be <span class="gradient-text">remembered.</span></h2>
+
+            <p class="eyebrow">
+              SELECTED WORK
+            </p>
+
+            <h2>
+              Made to be
+              <span class="gradient-text">
+                remembered.
+              </span>
+            </h2>
+
           </div>
-          <a class="text-link" href="#contact">Have a project? <span>Let's create ↗</span></a>
+
+          <a
+            class="text-link"
+            href="#contact">
+
+            Have a project?
+            <span>
+              Let's create ↗
+            </span>
+
+          </a>
+
         </div>
+
 
         <div class="work-grid">
-          <!-- Replace each .work-media background/image with your original project images/videos. -->
-          <article class="work-card work-large reveal">
-            <div class="work-media p1"><a class="work-video-trigger" href="https://youtu.be/RG5b7PARDg0?si=zVhkIRy12BqFOvv2" target="_blank" rel="noopener noreferrer" aria-label="Watch P1 video on YouTube"><img src="p1.png" alt="WonderLab Studio product advertising project"><span class="play-badge" aria-hidden="true">▶</span></a></div>
-            <div class="work-info">
-              <div><span>AI COMMERCIAL</span><span>01</span></div>
-              <h3>Brand Film — Project One</h3>
-              <p>AI • Cinematic • Product</p>
+
+
+          <!-- PROJECT 01 -->
+
+          <article
+            class="work-card work-large reveal">
+
+            <div class="work-media p1">
+
+              <a
+                class="work-video-trigger"
+                href="https://youtu.be/RG5b7PARDg0?si=zVhkIRy12BqFOvv2"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch P1 video on YouTube">
+
+                <img
+                  src="p1.png"
+                  alt="WonderLab Studio product advertising project">
+
+                <span
+                  class="play-badge"
+                  aria-hidden="true">
+                  ▶
+                </span>
+
+              </a>
+
             </div>
+
+            <div class="work-info">
+
+              <div>
+                <span>AI COMMERCIAL</span>
+                <span>01</span>
+              </div>
+
+              <h3>
+                Brand Film — Project One
+              </h3>
+
+              <p>
+                AI • Cinematic • Product
+              </p>
+
+            </div>
+
           </article>
 
-          <article class="work-card reveal delay-1">
-            <div class="work-media p2"><a class="work-video-trigger" href="https://youtu.be/iH343KVjue0?si=OybN8LpmCghEXnxg" target="_blank" rel="noopener noreferrer" aria-label="Watch P2 video on YouTube"><img src="p2.png" alt="WonderLab Studio product advertising project"><span class="play-badge" aria-hidden="true">▶</span></a></div>
-            <div class="work-info">
-              <div><span>3D / PRODUCT</span><span>02</span></div>
-              <h3>Product Visuals</h3>
-              <p>3D • Animation • Motion</p>
+
+          <!-- PROJECT 02 -->
+
+          <article
+            class="work-card reveal delay-1">
+
+            <div class="work-media p2">
+
+              <a
+                class="work-video-trigger"
+                href="https://youtu.be/iH343KVjue0?si=OybN8LpmCghEXnxg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch P2 video on YouTube">
+
+                <img
+                  src="p2.png"
+                  alt="WonderLab Studio product advertising project">
+
+                <span
+                  class="play-badge"
+                  aria-hidden="true">
+                  ▶
+                </span>
+
+              </a>
+
             </div>
+
+            <div class="work-info">
+
+              <div>
+                <span>3D / PRODUCT</span>
+                <span>02</span>
+              </div>
+
+              <h3>
+                Product Visuals
+              </h3>
+
+              <p>
+                3D • Animation • Motion
+              </p>
+
+            </div>
+
           </article>
 
-          <article class="work-card reveal delay-2">
-            <div class="work-media p3"><a class="work-video-trigger" href="https://youtu.be/y-SEWCTw4rE?si=jeI5sqXQ0VNOiVDV" target="_blank" rel="noopener noreferrer" aria-label="Watch P3 video on YouTube"><img src="p3.png" alt="WonderLab Studio product advertising project"><span class="play-badge" aria-hidden="true">▶</span></a></div>
-            <div class="work-info">
-              <div><span>AI FASHION</span><span>03</span></div>
-              <h3>Fashion Campaign</h3>
-              <p>AI • Fashion • Social</p>
+
+          <!-- PROJECT 03 -->
+
+          <article
+            class="work-card reveal delay-2">
+
+            <div class="work-media p3">
+
+              <a
+                class="work-video-trigger"
+                href="https://youtu.be/y-SEWCTw4rE?si=jeI5sqXQ0VNOiVDV"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch P3 video on YouTube">
+
+                <img
+                  src="p3.png"
+                  alt="WonderLab Studio product advertising project">
+
+                <span
+                  class="play-badge"
+                  aria-hidden="true">
+                  ▶
+                </span>
+
+              </a>
+
             </div>
+
+            <div class="work-info">
+
+              <div>
+                <span>AI FASHION</span>
+                <span>03</span>
+              </div>
+
+              <h3>
+                Fashion Campaign
+              </h3>
+
+              <p>
+                AI • Fashion • Social
+              </p>
+
+            </div>
+
           </article>
 
-          <article class="work-card work-wide reveal">
-            <div class="work-media p4"><a class="work-video-trigger" href="https://youtu.be/cNkhWTHU8IM?si=q5fA-6qjcOM9UsAg" target="_blank" rel="noopener noreferrer" aria-label="Watch P4 video on YouTube"><img src="p4.png" alt="WonderLab Studio product advertising project"><span class="play-badge" aria-hidden="true">▶</span></a></div>
-            <div class="work-info">
-              <div><span>VFX / CINEMA</span><span>04</span></div>
-              <h3>Visual Storytelling</h3>
-              <p>VFX • Compositing • Film</p>
+
+          <!-- PROJECT 04 -->
+
+          <article
+            class="work-card work-wide reveal">
+
+            <div class="work-media p4">
+
+              <a
+                class="work-video-trigger"
+                href="https://youtu.be/cNkhWTHU8IM?si=q5fA-6qjcOM9UsAg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch P4 video on YouTube">
+
+                <img
+                  src="p4.png"
+                  alt="WonderLab Studio product advertising project">
+
+                <span
+                  class="play-badge"
+                  aria-hidden="true">
+                  ▶
+                </span>
+
+              </a>
+
             </div>
+
+            <div class="work-info">
+
+              <div>
+                <span>VFX / CINEMA</span>
+                <span>04</span>
+              </div>
+
+              <h3>
+                Visual Storytelling
+              </h3>
+
+              <p>
+                VFX • Compositing • Film
+              </p>
+
+            </div>
+
           </article>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- STATS -->
+
+    <!-- =========================================================
+         STATS
+    ========================================================== -->
+
     <section class="stats-section">
+
       <div class="container stats-grid">
-        <div class="stat reveal"><strong data-count="25">0</strong><span>Years of production experience</span></div>
-        <div class="stat reveal delay-1"><strong data-count="100">0</strong><span>Creative possibilities with AI</span></div>
-        <div class="stat reveal delay-2"><strong data-count="360">0</strong><span>Visual solutions under one roof</span></div>
-        <div class="stat reveal delay-3"><strong data-count="24">0</strong><span>Hours of creative thinking</span></div>
+
+        <div class="stat reveal">
+
+          <strong data-count="25">
+            0
+          </strong>
+
+          <span>
+            Years of production experience
+          </span>
+
+        </div>
+
+
+        <div class="stat reveal delay-1">
+
+          <strong data-count="100">
+            0
+          </strong>
+
+          <span>
+            Creative possibilities with AI
+          </span>
+
+        </div>
+
+
+        <div class="stat reveal delay-2">
+
+          <strong data-count="360">
+            0
+          </strong>
+
+          <span>
+            Visual solutions under one roof
+          </span>
+
+        </div>
+
+
+        <div class="stat reveal delay-3">
+
+          <strong data-count="24">
+            0
+          </strong>
+
+          <span>
+            Hours of creative thinking
+          </span>
+
+        </div>
+
       </div>
+
     </section>
 
-    <!-- PROCESS -->
-    <section class="section process-section" id="process">
+
+    <!-- =========================================================
+         PROCESS
+    ========================================================== -->
+
+    <section
+      class="section process-section"
+      id="process">
+
       <div class="container">
+
         <div class="section-head reveal">
+
           <div>
-            <p class="eyebrow">HOW WE WORK</p>
-            <h2>From <span class="gradient-text">brief</span> to final frame.</h2>
+
+            <p class="eyebrow">
+              HOW WE WORK
+            </p>
+
+            <h2>
+              From
+              <span class="gradient-text">
+                brief
+              </span>
+              to final frame.
+            </h2>
+
           </div>
-          <p class="section-intro">A focused production workflow that keeps the idea at the centre while technology accelerates the execution.</p>
+
+          <p class="section-intro">
+            A focused production workflow that keeps
+            the idea at the centre while technology
+            accelerates the execution.
+          </p>
+
         </div>
+
 
         <div class="process-list">
+
+
           <div class="process-item reveal">
-            <span class="process-no">01</span>
-            <div><h3>Discover</h3><p>We understand your brand, audience, objective and the story you want to tell.</p></div>
-            <span class="process-arrow">↗</span>
+
+            <span class="process-no">
+              01
+            </span>
+
+            <div>
+
+              <h3>
+                Discover
+              </h3>
+
+              <p>
+                We understand your brand, audience,
+                objective and the story you want to tell.
+              </p>
+
+            </div>
+
+            <span class="process-arrow">
+              ↗
+            </span>
+
           </div>
+
+
           <div class="process-item reveal delay-1">
-            <span class="process-no">02</span>
-            <div><h3>Concept</h3><p>We shape the visual direction, script, references, style and production approach.</p></div>
-            <span class="process-arrow">↗</span>
+
+            <span class="process-no">
+              02
+            </span>
+
+            <div>
+
+              <h3>
+                Concept
+              </h3>
+
+              <p>
+                We shape the visual direction, script,
+                references, style and production approach.
+              </p>
+
+            </div>
+
+            <span class="process-arrow">
+              ↗
+            </span>
+
           </div>
+
+
           <div class="process-item reveal delay-2">
-            <span class="process-no">03</span>
-            <div><h3>Create</h3><p>AI, 3D, animation, VFX and post-production come together to build the final film.</p></div>
-            <span class="process-arrow">↗</span>
+
+            <span class="process-no">
+              03
+            </span>
+
+            <div>
+
+              <h3>
+                Create
+              </h3>
+
+              <p>
+                AI, 3D, animation, VFX and post-production
+                come together to build the final film.
+              </p>
+
+            </div>
+
+            <span class="process-arrow">
+              ↗
+            </span>
+
           </div>
+
+
           <div class="process-item reveal delay-3">
-            <span class="process-no">04</span>
-            <div><h3>Deliver</h3><p>Final content is prepared for TV, digital, social media and campaign use.</p></div>
-            <span class="process-arrow">↗</span>
+
+            <span class="process-no">
+              04
+            </span>
+
+            <div>
+
+              <h3>
+                Deliver
+              </h3>
+
+              <p>
+                Final content is prepared for TV, digital,
+                social media and campaign use.
+              </p>
+
+            </div>
+
+            <span class="process-arrow">
+              ↗
+            </span>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- ABOUT -->
-    <section class="section about-section" id="about">
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================== -->
+
+    <section
+      class="section about-section"
+      id="about">
+
       <div class="container about-grid">
+
+
         <div class="about-visual reveal">
+
           <div class="about-frame">
-            <img src="wonderlab-logo.png" alt="WonderLab Studio">
+
+            <img
+              src="wonderlab-logo.png"
+              alt="WonderLab Studio">
+
             <div class="about-orbit"></div>
+
           </div>
+
         </div>
+
+
         <div class="about-copy reveal delay-1">
-          <p class="eyebrow">WHY WONDERLAB</p>
-          <h2>Technology is powerful.<br><span class="gradient-text">Story is everything.</span></h2>
-          <p>
-            WonderLab Studio brings together AI creativity, 3D, animation, VFX, video production and AR to build visual experiences for modern brands.
+
+          <p class="eyebrow">
+            WHY WONDERLAB
           </p>
+
+          <h2>
+            Technology is powerful.<br>
+            <span class="gradient-text">
+              Story is everything.
+            </span>
+          </h2>
+
           <p>
-            Our goal is simple: make complex ideas feel exciting, premium and easy to remember — without losing the human side of storytelling.
+            WonderLab Studio brings together AI creativity,
+            3D, animation, VFX, video production and AR
+            to build visual experiences for modern brands.
           </p>
+
+          <p>
+            Our goal is simple: make complex ideas feel
+            exciting, premium and easy to remember —
+            without losing the human side of storytelling.
+          </p>
+
           <div class="about-tags">
-            <span>Creative Direction</span><span>AI Production</span><span>3D / VFX</span><span>AR</span>
+
+            <span>
+              Creative Direction
+            </span>
+
+            <span>
+              AI Production
+            </span>
+
+            <span>
+              3D / VFX
+            </span>
+
+            <span>
+              AR
+            </span>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- INDUSTRIES -->
+
+    <!-- =========================================================
+         INDUSTRIES
+    ========================================================== -->
+
     <section class="section industries-section">
+
       <div class="container">
+
         <div class="section-head compact reveal">
-          <div><p class="eyebrow">BUILT FOR BRANDS</p><h2>Visual content for <span class="gradient-text">every ambition.</span></h2></div>
+
+          <div>
+
+            <p class="eyebrow">
+              BUILT FOR BRANDS
+            </p>
+
+            <h2>
+              Visual content for
+              <span class="gradient-text">
+                every ambition.
+              </span>
+            </h2>
+
+          </div>
+
         </div>
+
+
         <div class="industry-grid">
-          <span>Fashion</span><span>Beauty</span><span>Food & Beverage</span><span>Hotels & Travel</span>
-          <span>Technology</span><span>Retail</span><span>Entertainment</span><span>Education</span>
+
+          <span>Fashion</span>
+          <span>Beauty</span>
+          <span>Food & Beverage</span>
+          <span>Hotels & Travel</span>
+
+          <span>Technology</span>
+          <span>Retail</span>
+          <span>Entertainment</span>
+          <span>Education</span>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section" id="contact">
+
+    <!-- =========================================================
+         CTA
+    ========================================================== -->
+
+    <section
+      class="cta-section"
+      id="contact">
+
       <div class="cta-glow"></div>
+
       <div class="container cta-inner reveal">
-        <p class="eyebrow">LET'S MAKE SOMETHING</p>
-        <h2>Your next big idea<br><span class="gradient-text">starts here.</span></h2>
-        <p>Tell us what you want to create. We'll help turn the idea into a visual experience.</p>
+
+        <p class="eyebrow">
+          LET'S MAKE SOMETHING
+        </p>
+
+        <h2>
+          Your next big idea<br>
+          <span class="gradient-text">
+            starts here.
+          </span>
+        </h2>
+
+        <p>
+          Tell us what you want to create.
+          We'll help turn the idea into a visual experience.
+        </p>
+
+
         <div class="cta-actions">
-          <a class="btn btn-primary" href="mailto:wonderlabstudio.lk@gmail.com?subject=WonderLab%20Studio%20Project%20Enquiry">Email WonderLab <span>↗</span></a>
-          <a class="btn btn-whatsapp" href="https://wa.me/94769801157?text=Hi%20WonderLab%20Studio%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp Us <span>↗</span></a>
+
+          <a
+            class="btn btn-primary"
+            href="mailto:wonderlabstudio.lk@gmail.com?subject=WonderLab%20Studio%20Project%20Enquiry">
+
+            Email WonderLab
+            <span>↗</span>
+
+          </a>
+
+
+          <a
+            class="btn btn-whatsapp"
+            href="https://wa.me/94769801157?text=Hi%20WonderLab%20Studio%2C%20I%20would%20like%20to%20discuss%20a%20project."
+            target="_blank"
+            rel="noopener">
+
+            WhatsApp Us
+            <span>↗</span>
+
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
   <footer class="footer">
+
     <div class="container footer-top">
-      <a class="footer-brand" href="#top"><img src="wonderlab-logo.png" alt="WonderLab Studio"></a>
+
+      <a
+        class="footer-brand"
+        href="#top">
+
+        <img
+          src="wonderlab-logo.png"
+          alt="WonderLab Studio">
+
+      </a>
+
+
       <div class="footer-links">
-        <a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#work">
+          Work
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </div>
+
     </div>
+
+
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> WonderLab Studio. All rights reserved.</span>
-      <span>AI • 3D • ANIMATION • VIDEO</span>
+
+      <span>
+        ©
+        <span id="year"></span>
+        WonderLab Studio. All rights reserved.
+      </span>
+
+      <span>
+        AI • 3D • ANIMATION • VIDEO
+      </span>
+
     </div>
+
   </footer>
 
-  <!-- Simple project/showreel modal -->
-  <div class="modal" id="videoModal" aria-hidden="true">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-box">
-      <button class="modal-close" data-close-modal aria-label="Close">×</button>
-      <div class="modal-placeholder">
-        <div class="modal-play">▶</div>
-        <h3>Your Showreel Goes Here</h3>
-        <p>Replace this block with your YouTube/Vimeo/video embed when your showreel is ready.</p>
-      </div>
-    </div>
-  </div>
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
 
   <script src="script.js"></script>
+
+
+  <!-- HERO VIDEO PLAY / PAUSE FALLBACK -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const video =
+        document.getElementById("showreelVideo");
+
+      const button =
+        document.getElementById("videoPlayButton");
+
+
+      if (!video || !button) {
+        return;
+      }
+
+
+      function updateButton() {
+
+        if (video.paused) {
+
+          button.innerHTML = "▶";
+
+          button.setAttribute(
+            "aria-label",
+            "Play showreel"
+          );
+
+        } else {
+
+          button.innerHTML = "❚❚";
+
+          button.setAttribute(
+            "aria-label",
+            "Pause showreel"
+          );
+
+        }
+
+      }
+
+
+      button.addEventListener(
+        "click",
+        function () {
+
+          if (video.paused) {
+
+            video.play();
+
+          } else {
+
+            video.pause();
+
+          }
+
+        }
+      );
+
+
+      video.addEventListener(
+        "play",
+        updateButton
+      );
+
+      video.addEventListener(
+        "pause",
+        updateButton
+      );
+
+
+      updateButton();
+
+    });
+
+
+    /* CURRENT YEAR */
+
+    const yearElement =
+      document.getElementById("year");
+
+    if (yearElement) {
+
+      yearElement.textContent =
+        new Date().getFullYear();
+
+    }
+
+  </script>
 
 
 </body>
